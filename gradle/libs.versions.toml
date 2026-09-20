@@ -1,0 +1,12 @@
+[versions]
+kotlin = "2.3.10"
+detekt = "1.23.8"
+swdevsm-publishing-conventions = "0.0.1"
+
+[libraries]
+# Maven artifact of the detekt Gradle plugin — the precompiled script plugin
+# needs this on its classpath so it can `apply` the plugin by id.
+detekt-gradle-plugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+
+[plugins]
+swdevsm-publishing-conventions = { id = "ru.swdevsm.publishing-conventions", version.ref = "swdevsm-publishing-conventions" }

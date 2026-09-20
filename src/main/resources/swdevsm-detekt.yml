@@ -1,0 +1,70 @@
+build:
+  excludeCorrectable: true
+
+style:
+  active: true
+  WildcardImport:
+    active: false
+    excludeImports:
+      - 'java.util.*'
+  MagicNumber:
+    active: true
+  UnusedPrivateMember:
+    active: true
+  UseRequireNotNull:
+    active: true
+  SerialVersionUIDInSerializableClass:
+    active: false
+  UnnecessaryAbstractClass:
+    active: false
+  MaxLineLength:
+    active: false
+  TrailingWhitespace:
+    active: false
+  NewLineAtEndOfFile:
+    active: false
+
+empty-blocks:
+  active: true
+
+complexity:
+  active: true
+  StringLiteralDuplication:
+    active: true
+    threshold: 3
+  LongParameterList:
+    ignoreDefaultParameters: true
+    constructorThreshold: 10
+  LongMethod:
+    threshold: 100
+  TooManyFunctions:
+    ignorePrivate: true
+
+comments:
+  active: true
+
+potential-bugs:
+  active: true
+  UnnecessaryNotNullOperator:
+    active: true
+  UnsafeCallOnNullableType:
+    active: true
+
+performance:
+  active: true
+
+naming:
+  active: true
+
+exceptions:
+  active: true
+  SwallowedException:
+    active: true
+    ignoredExceptionTypes: ['ResourceLockException', 'ResourceBusyException']
+  TooGenericExceptionCaught:
+    active: false
+
+coroutines:
+  active: true
+  InjectDispatcher:
+    active: false
